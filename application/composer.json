@@ -1,0 +1,7 @@
+{
+	"name":"rgr/cofradia",
+	"require": {
+   				"kint-php/kint": "^1.0",
+   				"phpmailer/phpmailer": "~6.0"   							
+   				}
+}

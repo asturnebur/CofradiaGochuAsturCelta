@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //$url= 'https://cofpruebas.000webhostapp.com/';
-$url= 'http://localhost/codeigniter_cofradia/';
+$url= 'http://localhost/CofradiaGochuAsturCelta/';
 
 $config['base_url'] = $url;
 

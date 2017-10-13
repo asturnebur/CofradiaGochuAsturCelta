@@ -102,8 +102,8 @@
 				
 
 				<td>
-					 <a href="<?=base_url();?>adminmenu/VerCofrades&m=<?=$idEventoCofradia;?>"><span class="glyphicon glyphicon-edit"></span></a> </br>
-					 <a href="<?=base_url();?>adminmenu/VerCofrades&e=<?=$idEventoCofradia;?>"><span class="glyphicon glyphicon-trash"></span></a> </br>
+					 <a href="<?=base_url();?>AdminMenu?opc=eEvento&idEventoCofradia=<?=$idEventoCofradia;?>"><span class="glyphicon glyphicon-edit" style="font-size: 30px;"></span></a> <hr>
+					 <a href="<?=base_url();?>AdminMenu?opc=dEvento&idEventoCofradia=<?=$idEventoCofradia;?>"><span class="glyphicon glyphicon-trash" style="font-size: 30px; color:red;"></span></a> </br>
 				</td>								
 			</tr>
 	

@@ -25,7 +25,11 @@
               'mydistribution'=>'global',
               'creador' =>'Rubén González Rodríguez',
               'description' =>'Asociación amigos de la cofradía del Gochu Asturcelta',
-              'keywords' => 'Amigos Cofradía Gochu Asturcelta, Amigos Gochu Asturcelta, Eventos cofradia gochu asturcelta',
+              'keywords' => 'Amigos Cofradía Gochu Asturcelta,
+                             Amigos Gochu Asturcelta,
+                             Eventos cofradia gochu AsturCelta,
+                             Gochu AsturCelta',
+
               'mytwitter_tag' =>'@cofgochuastur',
               'myrobots'=>'index, follow',
               'mygoogletraduccion'=>'notranslate',

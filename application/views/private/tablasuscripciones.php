@@ -31,8 +31,8 @@
 				<td class='col-md-4'><?=$confirmado ? '<span class="glyphicon glyphicon-ok"></span>' : '<span class="glyphicon glyphicon-remove"></span>'?></td>
 				<td class='col-md-4'><?=$codigo?></td>	
 				<td>
-					 <a href="<?=base_url();?>AdminMenu">Modificar</a> </br>
-					 <a href="<?=base_url();?>AdminMenu/EliminarSuscripcion?email=<?=$email;?>"><span class="glyphicon glyphicon-trash"></span></a> </br>
+					 <a href="<?=base_url();?>AdminMenu?opc=modifyS&email=<?=$email;?>">Modificar</a> </br>
+					 <a href="<?=base_url();?>AdminMenu?opc=deleteS&email=<?=$email;?>"><span class="glyphicon glyphicon-trash" style="font-size: 30px; color:red;"></span></a> </br>
 				</td>								
 			</tr>
 	

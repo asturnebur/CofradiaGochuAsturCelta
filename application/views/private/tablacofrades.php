@@ -66,9 +66,9 @@
 					<td class='col-md'><?=$idCofrade;?></td>	
 					
 
-					<td>
-						 <a href="<?=base_url();?>adminmenu/VerCofrades&m=<?=$idCofrade;?>"><span class="glyphicon glyphicon-edit"></span></a> </br>
-						 <a href="<?=base_url();?>adminmenu/VerCofrades&e=<?=$idCofrade;?>"><span class="glyphicon glyphicon-trash"></span></a> </br>
+					<td>  
+						 <a href="<?=base_url();?>AdminMenu?opc=eCofrade&idCofrade=<?=$idCofrade;?>"><span class="glyphicon glyphicon-edit" style="font-size: 30px;"></span></a> <hr>
+						 <a href="<?=base_url();?>AdminMenu?opc=dCofrade&idCofrade=<?=$idCofrade;?>"><span class="glyphicon glyphicon-trash" style="font-size: 30px; color:red;"></span></a> </br>
 					</td>								
 				</tr>
 		

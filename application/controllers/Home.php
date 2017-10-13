@@ -19,6 +19,8 @@
 			$this->load->view('guest/head',$datahead);
 
 			$this->load->view('guest/header');
+			$this->load->view('guest/nav');					
+
 			
 						
 			

@@ -27,7 +27,9 @@
 
 			$this->load->view('guest/head',$datahead);
 
-			$this->load->view('guest/header');						
+			$this->load->view('guest/header');	
+			$this->load->view('guest/nav');					
+					
 						
 			$code= $_REQUEST['code'];
 			$email= $_REQUEST['email'];
@@ -70,7 +72,9 @@
 
 			$this->load->view('guest/head',$datahead);
 
-			$this->load->view('guest/header');		
+			$this->load->view('guest/header');
+			$this->load->view('guest/nav');					
+		
 
 			$email= $_REQUEST['email'];
 

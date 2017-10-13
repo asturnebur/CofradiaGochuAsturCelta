@@ -155,6 +155,32 @@
 			return false;
 		}
 
+		public function bajaEvento($idEventoCofradia){			
+	
+			
+			$sql= "DELETE FROM eventos WHERE idEventoCofradia='$idEventoCofradia'";
+			$this->db->query($sql);
+			
+
+		}
+
+		public function editEvento($idEventoCofradia,$nombreEvento,$comentariosEvento,$lugarEvento,$provinciaEvento,$calleEvento,$fechaInicioEvento,$fechaFinalEvento,$fotoEvento){			
+	
+			
+			$sql="UPDATE usuarios SET nombreEvento = '$nombreEvento',
+									   comentariosEvento= '$comentariosEvento',
+									   lugarEvento= '$lugarEvento',
+									   provinciaEvento= '$provinciaEvento',
+									   calleEvento= '$calleEvento',
+									   fechaInicioEvento= '$fechaInicioEvento',
+									   fechaFinalEvento= '$fechaFinalEvento',
+									   fotoEvento = '$fotoEvento'
+									   WHERE idEventoCofradia='$idEventoCofradia' ";
+			return $this->db->query($sql);
+			
+
+		}
+
 
 		public function numEventos(){
 

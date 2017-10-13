@@ -56,14 +56,14 @@
 		
 		public function getTablaLoteria(){
 
-			return $this->db->get('loterianavidad');
+			return $this->db->get('loterias');
 		}
 
 		public function getfilaLoteria($yearLoteria){
 
 			
 
-			$sentencia= "SELECT * FROM loterianavidad WHERE yearLoteria='$yearLoteria' LIMIT 1";
+			$sentencia= "SELECT * FROM loterias WHERE yearLoteria='$yearLoteria' LIMIT 1";
 
 			$resultado= $this->db->query($sentencia);
 
@@ -77,7 +77,7 @@
 
 				$yearLoteria  = date('Y');				
 
-				$sentencia = "INSERT INTO loterianavidad(numeroLoteria, yearLoteria, fotoLoteria) 
+				$sentencia = "INSERT INTO loterias(numeroLoteria, yearLoteria, fotoLoteria) 
 							VALUES ('$numeroLoteria','$yearLoteria','$fotoLoteria'";
 
 

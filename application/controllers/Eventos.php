@@ -27,7 +27,9 @@
 			$datahead=$this->datalibrary->buildHead();
 			$this->load->view('guest/head',$datahead);
 
-			$this->load->view('guest/header');	
+			$this->load->view('guest/header');
+			$this->load->view('guest/nav');					
+	
 
 
 			//ZONA ASIDE IZQ

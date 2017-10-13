@@ -46,8 +46,8 @@
 					<td class='col-md'><?=$comentarios;?></td> 
 
 					<td>
-						 <a href="<?=base_url();?>adminmenu/VerCofrades&m=<?=$email;?>">Modificar</a> </br>
-						 <a href="<?=base_url();?>adminmenu/VerCofrades&e=<?=$email;?>">Eliminar</a> </br>
+						 
+						 <a href="<?=base_url();?>adminmenu?opc=dMsgContacto&email=<?=$email;?>"><span class="glyphicon glyphicon-trash" style="font-size: 30px; color:red;"></span></a> </br>
 					</td>								
 				</tr>
 		

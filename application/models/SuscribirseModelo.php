@@ -60,7 +60,7 @@
 		public function getTablaSuscripciones(){			
 	
 			$this->db->select('*');
-			$this->db->from('suscripcion');		
+			$this->db->from('suscripciones');		
 			$query = $this->db->get();			
 
 			return $query->result_array();  
@@ -70,7 +70,7 @@
 
 			// $total = $this->db->get('posttable')->num_rows();   METODO LENTO DE CARA AL SERVIDOR
 
-			$sentencia = "SELECT count(*) AS total FROM suscripcion";
+			$sentencia = "SELECT count(*) AS total FROM suscripciones";
 			$total= $this->db->query($sentencia)->row()->total;  // converir fila y total
 						
 			return intval($total);  // asegurarnos que sea entero
@@ -97,14 +97,14 @@
 
 		public function isEmailInDataBase($email){
 
-			$query= $this->db->query("SELECT email FROM suscripcion WHERE email = '$email' ");
+			$query= $this->db->query("SELECT email FROM suscripciones WHERE email = '$email' ");
 			return $row = $query->row();  //Return 1 or null
 		}
 
 
 		public function isEmailCodeInDataBase($email,$code){
 
-			$query= $this->db->query("SELECT email, code FROM suscripcion WHERE email = '$email' AND code='$code' ");
+			$query= $this->db->query("SELECT email, code FROM suscripciones WHERE email = '$email' AND code='$code' ");
 			return $row = $query->row();  //Return 1 or null
 		}
 
@@ -112,20 +112,20 @@
 
 		public function SetEmailVerificado($email,$code){
 			
-			$sql="UPDATE suscripcion SET isConfirmed = '1' WHERE email='$email' AND code='$code' AND isConfirmed='0' ";
+			$sql="UPDATE suscripciones SET isConfirmed = '1' WHERE email='$email' AND code='$code' AND isConfirmed='0' ";
 			return $this->db->query($sql);
 		}
 
 
 		public function altaEmail($email,$code){
 			
-			$sql= "INSERT INTO suscripcion (email,isConfirmed,code) VALUES ('$email','0','$code')";
+			$sql= "INSERT INTO suscripciones (email,isConfirmed,code) VALUES ('$email','0','$code')";
 			$this->db->query($sql);
 		}
 
 		public function bajaEmail($email){
 			
-			$sql= "DELETE FROM suscripcion WHERE email='$email'";
+			$sql= "DELETE FROM suscripciones WHERE email='$email'";
 			$this->db->query($sql);
 		}
 

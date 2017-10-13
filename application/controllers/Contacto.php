@@ -48,6 +48,8 @@
 			
 			$this->load->view('guest/head',$datahead);
 			$this->load->view('guest/header');	
+			$this->load->view('guest/nav');					
+
 
 			$msgContacto = array (
               'msgContactoSugerencia' =>$msgContactoSugerencia,
@@ -211,6 +213,8 @@
 
 					$this->load->view('guest/head',$datahead);
 					$this->load->view('guest/header');
+					$this->load->view('guest/nav');					
+
 
 		        	$dataAlta['msgContactoConfirmado']="Hemos procesado tu solicitud!";
 					$dataAlta['msgContactoConfirmado2']="Gracias por ponerte en contacto con nosotros.";
